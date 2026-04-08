@@ -36,6 +36,9 @@ def print_error(text):
 def print_info(text):
     print(f"{Colors.OKCYAN}ℹ {text}{Colors.ENDC}")
 
+def print_warning(text):
+    print(f"{Colors.WARNING}⚠ {text}{Colors.ENDC}")
+
 def check_command_exists(cmd):
     """Check if a command is available in PATH"""
     return subprocess.run(["which" if platform.system() != "Windows" else "where", cmd],
