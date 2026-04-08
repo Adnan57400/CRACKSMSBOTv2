@@ -54,7 +54,7 @@ const {
   fetchLatestBaileysVersion,
   makeCacheableSignalKeyStore,
   getPhoneNumber,
-} = require('@whiskeysockets/baileys');
+} = await import('@whiskeysockets/baileys');
 
 const pino      = require('pino');
 const NodeCache = require('node-cache');
